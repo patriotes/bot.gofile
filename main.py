@@ -16,23 +16,22 @@ Bot = Client(
 )
 
 INSTRUCTIONS = """
-I am a gofile uploader telegram bot. \
-You can upload files to gofile.io with command.
-
-With media:
+Je suis un robot de télégramme de téléchargement de fichiers Gofile. \
+Vous pouvez télécharger des fichiers sur gofile.io avec la commande.
+Avec les médias:
     Normal:
         `/upload`
-    With token:
+    Avec token:
         `/upload token`
-    With folder id:
+    Avec l'identifiant du dossier:
         `/upload token folderid`
 
-Using Link:
+Utiliser le lien:
     Normal:
         `/upload url`
-    With token:
+    Avec token:
         `/upload url token`
-    With folder id:
+    Avec l'identifiant du dossier:
         `/upload url token folderid`
 """
 
