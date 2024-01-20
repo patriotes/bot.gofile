@@ -54,11 +54,11 @@ async def filter(bot, update):
         disable_web_page_preview=True
     )
 
-    text = update.text.replace ("\n", " ")
+    text = update.text ("\n", " ")
     url = None
     token = None
     folderId = None
-    update.text.replace = None
+    
     
     if " " in text:
         text = text.split(" ", 1)[1]
