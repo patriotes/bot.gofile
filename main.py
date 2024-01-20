@@ -16,22 +16,23 @@ Bot = Client(
 )
 
 INSTRUCTIONS = """
-Je suis un robot de télégramme de téléchargement de fichiers Gofile. \
-Vous pouvez télécharger des fichiers sur gofile.io avec la commande.
-Avec les médias:
+I am a gofile uploader telegram bot. \
+You can upload files to gofile.io with command.
+
+With media:
     Normal:
         `/upload`
-    Avec token:
+    With token:
         `/upload token`
-    Avec l'identifiant du dossier:
+    With folder id:
         `/upload token folderid`
 
-Utiliser le lien:
+Using Link:
     Normal:
         `/upload url`
-    Avec token:
+    With token:
         `/upload url token`
-    Avec l'identifiant du dossier:
+    With folder id:
         `/upload url token folderid`
 """
 
@@ -59,8 +60,6 @@ async def filter(bot, update):
     token = None
     folderId = None
 
-    
-    
     if " " in text:
         text = text.split(" ", 1)[1]
         if update.reply_to_message:
