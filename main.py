@@ -58,6 +58,7 @@ async def filter(bot, update):
     url = None
     token = None
     folderId = None
+    update.text.replace = None
     
     if " " in text:
         text = text.split(" ", 1)[1]
